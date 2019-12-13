@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #47423C;
+    scroll-behavior: smooth;
+}
+body{
+    background: url("../bg/Web 1366 – 2.svg");
+    background-size: 100%;
+    background-position-y: 0px;
+}
+
+
+
+
+
+/* .parallax-wrapper {
+    height: 100%;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+.parallax-wrapper::before {
+    content:"";
+    width: 100vw;
+    height: 100%;
+    background-image: url("../bg/Web 1366 – 2.svg");
+    position: absolute;
+    z-index: -1;
+    transform:translateZ(-1px) scale(2);
+} */
+
+
+
+
+
+
+.logo{
+    color: rgb(255, 151, 39);
+    font-weight: bold;
+    font-size: 24px;
+}
+.flex-pull-left{
+    margin-right: auto;
+}
+
+.sec-item .tmbr{
+    margin-left: 24px;
+}
+
+.sec-flex{
+    margin: 20% 10% 15% 10% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec-flex:nth-child(2){
+    flex-direction: row-reverse;
+    margin: 0 0 10% 0 ;
+}
+
+.sec-title{
+    color: #47423C;
+    font-size: 42px;
+    margin: 12px 0;
+}
+.sec-title:first-child{
+    color: rgb(139, 137, 133);
+    font-size: 20pt;
+    font-weight: lighter;
+}
+.sec-para{
+    font-size: 14pt;
+    color: #47423C;
+    margin-bottom: 24px;
+}
+
+.introduction{
+    max-width: 35vw;
+    margin-bottom: 32px;
+}
+
+
+
+
+
+.title-main{
+    margin-top: 20%;
+    letter-spacing: 12px;
+    text-align: center;
+    font-size: 24pt;
+}
+
+.mn-line{
+    width: 7vw;
+    height: 0.5rem;
+    background-color: rgb(255, 151, 39);
+    border: none;
+    margin: 24px 0;
+}
+
+.p-center{
+    margin: auto;
+}
+
+
+
+
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5% 0;
+}
+.card{
+    /* margin: 0 6px; */
+    width: 22%;
+    height: 280px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    text-align: center;
+}
+/* .card:last-child{ */
+    /* margin: 0 6px; */
+    /* width: 20%;
+    background-color: rgb(46, 46, 46);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+} */
+.card-hd{
+    width: 100%;
+    /* height: 220px; */
+    overflow: hidden;
+}
+.material-icons{
+    margin: 20% 0 10% 0;
+    color: rgb(255, 151, 39);
+    font-size: 36pt;
+}
+.card-bd{
+    padding: 12px;
+}
+.card-txt{
+    margin: 12px 0;
+    font-size: 11pt;
+}
+
+
+
+
+.wide-banner{
+    position: relative;
+}
+.plx{
+    z-index: -2;
+    position: relative;
+    max-height: 24vh;
+    overflow: hidden;
+}
+.plx-bg{
+    max-width: 100%;
+    /* filter: blur(16px);
+    -webkit-filter: blur(16px); */
+    transform: scale(1.1);
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 140, 16, 0.863);
+}
+.box-intro{
+    z-index: -1;
+    position: absolute;
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.box-intro h2{
+    font-size: 24pt;
+    letter-spacing: 12px;
+    color: white;
+}
+.intro-para{
+    font-size: 12pt;
+    color: white;
+    margin: 40px 0 0 0;
+}
+
+
+
+
+
+#project-gal{
+    min-height: 700px;
+}
+
+
+
+
+
+
+footer{
+    min-height: 300px;
+    background-color: rgb(46, 46, 46);
+}
+.footer-mid-title{
+    color: beige;
+    font-size: 20pt;
+    margin: 36px 0;
+    text-align: center;
+}
+.icons-hor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 50%;
+    margin: auto;
+}
+.mini-ico{
+    max-height: 40px;
+}
+
+
+
+
+@media only screen and (max-width: 800px){
+    .flex-item{
+        display: none;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .sec-flex{
+        margin: 20% 10% 15% 10% ;
+        display: flex;
+        flex-direction: column;
+    }
+    /* section{
+        margin: 32px 0;
+    } */
+    .flex-item{
+        display: none;
+    }
+    .sec-item{
+        text-align: center;
+    }
+    .introduction{
+        max-width: unset;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 80%;
+        margin: 24px 0;
+    }
+}

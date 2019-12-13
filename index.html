@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style/main.css">
+    <link rel="stylesheet" href="src/style/mytemplate.css">
+    <link rel="stylesheet" href="src/style/animate.css">
+    <title>My Damnn Portfolio</title>
+</head>
+<body>
+
+<nav id="navb" class="navbar">
+    <ul class="nav-items">
+        <li class="nav-item flex-pull-left"><a class="logo" href=""><img src="src/logo/diamond.svg" style="height: 50px;" src=""></a></li>
+        <li class="nav-item nav-links active"><a href="#">TOP</a></li>
+        <li class="nav-item nav-links"><a href="#about">ABOUT</a></li>
+        <li class="nav-item nav-links"><a href="#projects">PROJECTS</a></li>
+        <li class="nav-item nav-links"><a href="#contacts">CONTACTS</a></li>
+    </ul>
+</nav>
+
+
+
+
+
+<div class="container" id="intro">
+    <section class="sec-flex">
+        <div class="sec-item">
+            <h4 class="sec-title">HI, I AM</h4>
+            <h1 class="sec-title">VINZHA HERMAN</h1>
+            <p  class="sec-para">A WEB DEVELOPER</p>
+            <a href="#projects" class="tmb tmb-md tmb-orange tmb-flat">MY PROJECTS</a>
+            <a href="https://drive.google.com/file/d/1cv_M01yRO8rM2dKvYLWmJYu-pHiEOf4B/view?usp=sharing" target="_blank" class="tmbr tmb-md">MY RESUME</a>
+        </div>
+
+        <img src="src/img/undraw_code_thinking_1jeh.svg" alt="" class="flex-item" style="width: 45%;">
+
+    </section>
+
+
+
+
+
+    <section class="sec-flex" id="about">
+        <div class="sec-item">
+            <h4 class="sec-title"></h4>
+            <h1 class="sec-title">I N T R O D U C T I O N</h1>
+            <hr class="mn-line">
+            <p class="introduction">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum temporibus neque repellat illo aliquam cumque delectus commodi dolore ipsa quas assumenda culpa, exercitationem blanditiis vero minima quos possimus dicta ratione.</p>
+            <a href="#contacts" class="tmb tmb-md tmb-orange tmb-flat">GET IN TOUCH</a>
+        </div>
+
+        <img src="src/img/undraw_up_to_date_rmbm.svg" alt="" class="flex-item" style="width: 42%;">
+
+    </section>
+
+
+
+
+    <section id="skills">
+        <h1 class="title-main">MY SKILLS</h1>
+        <!-- <hr class="mn-line p-center"> -->
+        <div class="cards">
+            <div class="card">
+                <div class="card-hd">
+                    <i class="material-icons"> code </i>
+                </div>
+                <div class="card-bd">
+                    <h4 class="card-title">CODE</h4>
+                    <p class="card-txt">HTML, CSS(SASS), Javascript(Jquery, ES6, Vue, React), PHP</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-hd">
+                    <i class="material-icons"> palette </i>
+                </div>
+                <div class="card-bd">
+                    <h4 class="card-title">DESIGN</h4>
+                    <p class="card-txt">Web design(adobe XD), editing(Photoshop), vector(Gravit Designer)</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-hd">
+                    <i class="material-icons"> chat </i>
+                </div>
+                <div class="card-bd">
+                    <h4 class="card-title">ESL</h4>
+                    <p class="card-txt">English as my second language. self-taught.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-hd">
+                    <i class="material-icons"> edit </i>
+                </div>
+                <div class="card-bd">
+                    <h4 class="card-title">ILLUSTRATION</h4>
+                    <p class="card-txt">My other skills<br>(if you're intrested)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+
+<section class="wide-banner" id="projects">
+    <div class="plx">
+        <img src="src/img/bg.jpg" alt="" class="plx-bg">
+        <div class="overlay"></div>
+    </div>
+    <div class="box-intro">
+        <h2>PROJECTS</h2>
+        <p class="intro-para">This section include all projects i have done.<br>i have done both designing and code a web application.</p>
+    </div>
+</section>
+
+
+
+
+
+<div class="container" id="project-gal">
+    <section>
+        <div class="mid-selector">
+            <a id="tb_1" class="bt-selector active" onClick="gallery.tabs('tb_1', 'content_1');">ALL</a>
+            <a id="tb_2" class="bt-selector" onClick="gallery.tabs('tb_2', 'content_2');">PERSONAL</a>
+            <a id="tb_3" class="bt-selector" onClick="gallery.tabs('tb_3', 'content_3');">ON PROGRESS</a>
+        </div>
+
+        <div class="gallery-grid tabcontent" id="content_1">
+            <div class="gallery-item">
+                <div class="gallery-content"><a href="https://github.com/vinzhaHerman/bumimandiri" target="_blank" ><img src="src/img/mixed.png" alt="" class="photo"></a></div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-content"><img src="src/img/nyetakin.png" alt="" class="photo"></div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-content"><img src="src/img/more.png" alt="" class="photo"></div>
+            </div>
+        </div>
+        <div class="gallery-grid tabcontent" id="content_2">
+            <div class="gallery-item">
+                <div class="gallery-content"><img src="src/img/nyetakin.png" alt="" class="photo"></div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-content"><img src="src/img/school.png" alt="" class="photo"></div>
+            </div>
+        </div>
+        <div class="gallery-grid tabcontent" id="content_3">
+            <div class="gallery-item">
+                <div class="gallery-content"><img src="src/img/more.png" alt="" class="photo"></div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+
+<footer>
+    <div class="container" id="contacts">
+        <h4 class="footer-mid-title">CONTACT ME</h4>
+        <div class="icons-hor">
+            <a href="//github.com/vinzhaHerman" target="_blank"><img src="src/icons/icons8-github.svg" alt="" class="mini-ico"></a>
+            <a href="//linkedin.com/in/vinzhaherman" target="_blank"><img src="src/icons/icons8-linkedin.svg" alt="" class="mini-ico"></a>
+            <a href="//wa.me/6281285636078" target="_blank"><img src="src/icons/icons8-whatsapp.svg" alt="" class="mini-ico"></a>
+            <a href="mailto:vinzhaherman@gmail.com" target="_blank"><img src="src/icons/icons8-gmail.svg" alt="" class="mini-ico"></a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<script src="src/script/main.js"></script>
+
+</body>
+</html>
