@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="src/style/main.css">
     <link rel="stylesheet" href="src/style/mytemplate.css">
     <link rel="stylesheet" href="src/style/animate.css">
-    <link rel="stylesheet" href="src/style/slider.css">
     <title>Vinzha Herman</title>
 </head>
 <body>
@@ -135,7 +134,7 @@
         </div>
 
         <div class="gallery-grid tabcontent" id="content_1">
-            <div class="gallery-item">
+            <!-- <div class="gallery-item">
                 <div class="gallery-content"><img src="src/img/mixed.png" alt="" class="photo"></div>
                 <div class="gal-opt">
                     <button id="modaltrigger" class="btn-reset opt-detail"><i class="material-icons"> info </i></button>
@@ -155,23 +154,23 @@
                     <button id="modaltrigger" class="btn-reset opt-detail"><i class="material-icons"> info </i></button>
                     <a href="javacsript:void(0)" class="opt-git"><i class="material-icons"> folder </i></a>
                 </div>
-            </div>
+            </div> -->
             <div class="gallery-item">
                 <div class="gallery-content"><img src="src/img/more.png" alt="" class="photo"></div>
             </div>
         </div>
         <div class="gallery-grid tabcontent" id="content_2">
-            <div class="gallery-item">
+            <!-- <div class="gallery-item">
                 <div class="gallery-content"><img src="src/img/nyetakin.png" alt="" class="photo"></div>
             </div>
             <div class="gallery-item">
                 <div class="gallery-content"><img src="src/img/school.png" alt="" class="photo"></div>
-            </div>
+            </div> -->
         </div>
         <div class="gallery-grid tabcontent" id="content_3">
-            <div class="gallery-item">
+            <!-- <div class="gallery-item">
                 <div class="gallery-content"><img src="src/img/more.png" alt="" class="photo"></div>
-            </div>
+            </div> -->
         </div>
     </section id="project-gal">
 </div>
@@ -205,23 +204,23 @@
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 
                 <div class="sl-content">
-                    <img src="./src/img/bm1.png" class="sl-img">
+                    <img src="" id="pv1" class="sl-img">
                 </div>
               
                 <div class="sl-content">
-                    <img src="./src/img/bm2.png" class="sl-img">
+                    <img src="" id="pv2" class="sl-img">
                 </div>
               
                 <div class="sl-content">
-                    <img src="./src/img/bm3.jpg" class="sl-img">
+                    <img src="" id="pv3" class="sl-img">
                 </div>
               
                 <div class="sl-content">
-                    <img src="./src/img/bm4.jpg" class="sl-img">
+                    <img src="" id="pv4" class="sl-img">
                 </div>
               
                 <div class="sl-content">
-                    <img src="./src/img/bm5.png" class="sl-img">
+                    <img src="" id="pv5" class="sl-img">
                 </div>
 
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -229,27 +228,21 @@
         </div>
         <div class="modal-left-details">
             <div class="para-scroll">
-                <h3 class="m-d-title">BUMI MANDIRI</h3>
-                <p class="m-d-para">
-                    Is a web application for booking/reservation.
-                    <br>
+                <h3 id="pvTitle" class="m-d-title"></h3>
+                <p id="pvPara" class="m-d-para">
+                    <span id="pvDesc"></span>
+                    <br><br>
                     Features:
                     <br>
-                    <ul>
-                        <li>Login [admin/customer]</li>
-                        <li>profile [admin/customer]</li>
-                        <li>dashboard [admin]</li>
-                        <li>Sales Report [admin]</li>
-                        <li>Reservation history [customer]</li>
-                        <li>Reservation cancelation [customer]</li>
-                        <li>Forgot Password [customer]</li>
+                    <ul id="pvFeature">
                     </ul>
                     <br>
-                    Languange used in this project: HTML, CSS, Javascript, Jquery, Bootstrap, PHP(codeigniter)
+                    <p>Tools use in this project:</p>
+                    <span id="pvTools"></span>
+                    <br><br>
+                    <p>With help from:</p>
+                    <span id="pvHelper"></span>
                     <br>
-                    3rd party library: Animate.css, Slick, Creative Tim's Material dashboard Bootstrap 4 admin dashboard, bootstrap datepicker.
-                    <br>
-                    Logo from Bumi Mandiri Sukabumi
                 </p>
                 <div class="tools-list">
                     <p></p>
@@ -265,6 +258,7 @@
 
 
 <script src="src/script/main.js"></script>
+<script src="src/script/data.js"></script>
 
 </body>
 </html>

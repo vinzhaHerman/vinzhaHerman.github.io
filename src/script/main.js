@@ -112,23 +112,23 @@ function showSlides(n) {
 
 
 
-var ov = document.getElementById('modalClose');
-var mo = document.getElementById('md-overlay');
-var md = document.getElementById('the-modal');
-var mt = document.getElementById('modaltrigger');
+// var ov = document.getElementById('modalClose');
+// var mo = document.getElementById('md-overlay');
+// var md = document.getElementById('the-modal');
+// var mt = document.getElementById('modaltrigger');
 
-mt.addEventListener('click', function(){
-	mo.style.display = "block";
-	md.classList.add("fadeIn");
-	setTimeout(function(){
-		md.classList.remove("fadeIn");
-	}, 1000);
-})
+// mt.addEventListener('click', function(){
+// 	mo.style.display = "block";
+// 	md.classList.add("fadeIn");
+// 	setTimeout(function(){
+// 		md.classList.remove("fadeIn");
+// 	}, 1000);
+// })
 
-ov.addEventListener('click', function(){
-	md.classList.add("fadeOut");
-	setTimeout(function(){
-		md.classList.remove("fadeOut");
-		mo.style.display = "none";
-	}, 500);
-});
+// ov.addEventListener('click', function(){
+// 	md.classList.add("fadeOut");
+// 	setTimeout(function(){
+// 		md.classList.remove("fadeOut");
+// 		mo.style.display = "none";
+// 	}, 500);
+// });
