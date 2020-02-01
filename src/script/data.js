@@ -24,13 +24,14 @@ var data = [
             "img4": "./src/img/bm4.jpg",
             "img5": "./src/img/bm5.png"
         },
-        "status": "offline"
+        "status": "offline",
+        "projectType": "Business"
     },
     {
         "id": "0002",
         "thumb": "./src/img/school.png",
         "title": "SING APIK HIGHSCHOOL",
-        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, quibusdam.",
+        "desc": "Is a web application for school to provide information for students",
         "features": [
             "Login [admin]", 
             "profile [admin]", 
@@ -47,13 +48,14 @@ var data = [
             "img4": "./src/img/sap4.png",
             "img5": "./src/img/sap5.png"
         },
-        "status": "offline"
+        "status": "offline",
+        "projectType": "Personal"
     },
     {
         "id": "0003",
         "thumb": "./src/img/nyetakin.png",
         "title": "NYETAKIN",
-        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, quibusdam.",
+        "desc": "Is an E-commerce market place built with wordpress and woocommerce",
         "features": [
             "Login [admin/customer/seller]", 
             "profile [admin/customer/seller]", 
@@ -71,9 +73,60 @@ var data = [
             "img4": "./src/img/sap4.png",
             "img5": "./src/img/sap5.png"
         },
-        "status": "offline"
+        "status": "offline",
+        "projectType": "Personal"
     }
 ];
+
+
+
+
+// var tab1 = document.getElementById('tb_1');
+// var tab2 = document.getElementById('tb_2');
+// var tab3 = document.getElementById('tb_3');
+// tab1.addEventListener('click', function(){
+//     document.getElementById('content_1').innerHTML = "";
+//     let result = data.map(el => {
+//         return `<div class="gallery-item">
+//                     <div class="gallery-content"><img src="${el.thumb}" alt="" class="photo"></div>
+//                     <div class="gal-opt">
+//                         <button class="modaltrigger btn-reset opt-detail" data-modal="${el.id}"><i class="material-icons"> info </i></button>
+//                         <a href="${el.repo}" class="opt-git"><i class="material-icons"> folder </i></a>
+//                     </div>
+//                 </div>`;
+//     });
+//     document.getElementById('content_1').innerHTML = result.join(' ');
+// });
+
+// tab2.addEventListener('click', function(){
+//     document.getElementById('content_1').innerHTML = "";
+//     let filterData = data.filter(e => e.projectType === "Personal");
+//     let result = filterData.map(el => {
+//         return `<div class="gallery-item">
+//                     <div class="gallery-content"><img src="${el.thumb}" alt="" class="photo"></div>
+//                     <div class="gal-opt">
+//                         <button class="modaltrigger btn-reset opt-detail" data-modal="${el.id}"><i class="material-icons"> info </i></button>
+//                         <a href="${el.repo}" class="opt-git"><i class="material-icons"> folder </i></a>
+//                     </div>
+//                 </div>`;
+//     });
+//     document.getElementById('content_1').innerHTML = result.join(' ');
+// });
+
+// tab3.addEventListener('click', function(){
+//     document.getElementById('content_1').innerHTML = "";
+//     let filterData = data.filter(e => e.projectType === "wip");
+//     let result = filterData.map(el => {
+//         return `<div class="gallery-item">
+//                     <div class="gallery-content"><img src="${el.thumb}" alt="" class="photo"></div>
+//                     <div class="gal-opt">
+//                         <button class="modaltrigger btn-reset opt-detail" data-modal="${el.id}"><i class="material-icons"> info </i></button>
+//                         <a href="${el.repo}" class="opt-git"><i class="material-icons"> folder </i></a>
+//                     </div>
+//                 </div>`;
+//     });
+//     document.getElementById('content_1').innerHTML = result.join(' ');
+// })
 
 
 

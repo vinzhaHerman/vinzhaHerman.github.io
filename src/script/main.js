@@ -4,15 +4,15 @@
 // });
 
 
-window.addEventListener("load", function(){
-	var x = document.getElementsByClassName("tabcontent");
-	for (var i = 0; i < x.length; i++) {
-		x[0].style.display = 'grid';
-		if(i>0){
-			x[i].style.display = 'none';
-		}
-	}
-});
+// window.addEventListener("load", function(){
+// 	var x = document.getElementsByClassName("tabcontent");
+// 	for (var i = 0; i < x.length; i++) {
+// 		x[0].style.display = 'grid';
+// 		if(i>0){
+// 			x[i].style.display = 'none';
+// 		}
+// 	}
+// });
 
 window.addEventListener("scroll", function(){
     var y = Math.round(window.scrollY);
@@ -55,21 +55,21 @@ window.addEventListener("scroll", function(){
 	
 });
 
-var gallery = {
-	tabs	: function(tab_id, tab_content){
-		var x = document.getElementsByClassName("tabcontent");
-		for (let i = 0; i < x.length; i++) {
-			x[i].style.display = 'none';
-		}
-		document.getElementById(tab_content).style.display = 'grid';
+// var gallery = {
+// 	tabs	: function(tab_id, tab_content){
+// 		var x = document.getElementsByClassName("tabcontent");
+// 		for (let i = 0; i < x.length; i++) {
+// 			x[i].style.display = 'none';
+// 		}
+// 		document.getElementById(tab_content).style.display = 'grid';
 		
-		var y = document.getElementsByClassName("bt-selector");
-		for (let i = 0; i < y.length; i++) {
-			y[i].className = 'bt-selector'; 
-		}
-		document.getElementById(tab_id).className = 'bt-selector active';
-	}
-};
+// 		var y = document.getElementsByClassName("bt-selector");
+// 		for (let i = 0; i < y.length; i++) {
+// 			y[i].className = 'bt-selector'; 
+// 		}
+// 		document.getElementById(tab_id).className = 'bt-selector active';
+// 	}
+// };
 
 function getOffset(el) {
 	const rect = el.getBoundingClientRect();
