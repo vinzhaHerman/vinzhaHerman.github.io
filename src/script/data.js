@@ -31,7 +31,7 @@ var data = [
         "id": "0002",
         "thumb": "./src/img/school.png",
         "title": "SING APIK HIGHSCHOOL",
-        "desc": "Is a web application for school to provide information for students",
+        "desc": "Is a web application for school to provide information for students and also my very first web project.",
         "features": [
             "Login [admin]", 
             "profile [admin]", 
@@ -43,7 +43,7 @@ var data = [
         "link": "javascript:void(0)",
         "img":{
             "img1": "./src/img/sap1.png",
-            "img2": "./src/img/sap2.png",
+            "img2": "./src/img/sap2.jpg",
             "img3": "./src/img/sap3.png",
             "img4": "./src/img/sap4.png",
             "img5": "./src/img/sap5.png"
@@ -67,11 +67,11 @@ var data = [
         "repo": "javascript:void(0)",
         "link": "javascript:void(0)",
         "img":{
-            "img1": "./src/img/sap1.png",
-            "img2": "./src/img/sap2.png",
-            "img3": "./src/img/sap3.png",
-            "img4": "./src/img/sap4.png",
-            "img5": "./src/img/sap5.png"
+            "img1": "./src/img/nyt1.png",
+            "img2": "./src/img/nyt2.png",
+            "img3": "./src/img/nyt3.png",
+            "img4": "./src/img/nyt4.png",
+            "img5": "./src/img/nyt5.png"
         },
         "status": "offline",
         "projectType": "Personal"
