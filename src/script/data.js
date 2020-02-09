@@ -15,7 +15,7 @@ var data = [
         ],
         "tools": ["HTML", "CSS", "Javascript", "Bootstrap", "PHP", "Codeigniter", "MySQL"],
         "helper": ["Animate.css", "Slick.js", "creative tim", "Bootstrap datepicker"],
-        "repo": "https:/github.com/cinzhaherman/bumimandiri",
+        "repo": "https://github.com/vinzhaherman/bumimandiri",
         "link": "",
         "img":{
             "img1": "./src/img/bm1.png",
