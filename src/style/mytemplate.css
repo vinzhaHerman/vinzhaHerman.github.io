@@ -141,47 +141,7 @@ nav ul li{
 
 
 
-.s-container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
-  .sl-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-    width: 600px;
-    height: 330px;
-    overflow: hidden;
-  }
-  .sl-img{
-    height: 100%;
-  }
-
-  .prev,
-  .next {
-    cursor: pointer;
-    width: auto;
-    padding: 16px;
-    color: rgb(255, 151, 39);
-    font-weight: bold;
-    font-size: 32pt;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-
-  .next {
-    border-radius: 3px 0 0 3px;
-  }
-
-  .prev:hover,
-  .next:hover {
-    transform: scale(1.2);
-  }
 
 
 

@@ -228,9 +228,59 @@ body{
 
 
 
+.s-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.sl-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  width: 600px;
+  height: 330px;
+  overflow: hidden;
+}
+.sl-img{
+  height: 100%;
+}
+.prev,
+.next {
+  cursor: pointer;
+  width: auto;
+  padding: 16px;
+  color: rgb(255, 151, 39);
+  font-weight: bold;
+  font-size: 32pt;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  transform: scale(1.2);
+}
+
+
+
+
 
 .images-con{
     width: 60%;
+    height: 400px;
+}
+.images-con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 .modal-left-details{
     position: relative;
@@ -242,6 +292,9 @@ body{
     width: 100%;
     height: 100%;
     overflow-y: scroll;
+}
+.para-scroll:last-child{
+    margin-bottom: 90px;
 }
 
 /* width */
@@ -258,10 +311,10 @@ body{
 .m-d-para{
     font-size: 12pt;
     color: rgb(77, 73, 73);
-    margin: 24px 0;
+    margin: 32px 0;
 }
 .tools-list{
-    margin-bottom: 90px;
+    margin-bottom: 36px;
 }
 
 .bot-gradient{
@@ -304,9 +357,31 @@ footer{
 
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1024px){
     .flex-item{
         display: none;
+    }
+    .s-container {
+        height: 60%;
+    }
+    .sl-content{
+        width: 100%;
+        height: 100%;
+    }
+    .the-modal.db-col{
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    .images-con{
+        width: 90%;
+        height: 40%;
+    }
+    .modal-left-details{
+        width: 90%;
+        padding: 5%;
+    }
+    .para-scroll{
+        text-align: center;
     }
 }
 

@@ -16,7 +16,7 @@ var data = [
         "tools": ["HTML", "CSS", "Javascript", "Bootstrap", "PHP", "Codeigniter", "MySQL"],
         "helper": ["Animate.css", "Slick.js", "creative tim", "Bootstrap datepicker"],
         "repo": "https://github.com/vinzhaherman/bumimandiri",
-        "link": "",
+        "link": "https://bumimandiri.000webhostapp.com",
         "img":{
             "img1": "./src/img/bm1.png",
             "img2": "./src/img/bm2.png",
@@ -178,6 +178,7 @@ for (let i = 0; i < mt.length; i++) {
 
         document.getElementById('pvTools').innerHTML = modalData[0].tools;
         document.getElementById('pvHelper').innerHTML = modalData[0].helper;
+        document.getElementById('linkToWeb').setAttribute("href", modalData[0].link);
     });
     
 }
