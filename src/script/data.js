@@ -39,7 +39,7 @@ var data = [
         ],
         "tools": ["HTML", "CSS", "Javascript", "PHP", "Codeigniter", "MySQL"],
         "helper": ["none"],
-        "repo": "javascript:void(0)",
+        "repo": "https://github.com/vinzhaherman/sing-apik-highschool",
         "link": "javascript:void(0)",
         "img":{
             "img1": "./src/img/sap1.png",
