@@ -1,7 +1,7 @@
 var data = [
     {
         "id": "0001",
-        "thumb": "./src/img/mixed.png",
+        "thumb": "./src/img/bumimandiri.png",
         "title": "BUMI MANDIRI",
         "desc": "Is a web application for booking/reservation.",
         "features": [
@@ -29,7 +29,7 @@ var data = [
     },
     {
         "id": "0002",
-        "thumb": "./src/img/school.png",
+        "thumb": "./src/img/sap.png",
         "title": "SING APIK HIGHSCHOOL",
         "desc": "Is a web application for school to provide information for students and also my very first web project.",
         "features": [
@@ -53,7 +53,7 @@ var data = [
     },
     {
         "id": "0003",
-        "thumb": "./src/img/nyetakin.png",
+        "thumb": "./src/img/nye.png",
         "title": "NYETAKIN",
         "desc": "Is an E-commerce market place built with wordpress and woocommerce",
         "features": [
@@ -74,6 +74,29 @@ var data = [
             "img5": "./src/img/nyt5.png"
         },
         "status": "offline",
+        "projectType": "Personal"
+    },
+    {
+        "id": "0004",
+        "thumb": "./src/img/poot.png",
+        "title": "POOTIS IN STORE",
+        "desc": "My first React project. Includes state management using context API. This project is based from tutorial by Traversy Media and i modified it and add more functionality",
+        "features": [
+            "Shopping cart",
+            "Paypal Checkout"
+        ],
+        "tools": ["HTML", "CSS", "Javascript", "React", "MDBootstrap"],
+        "helper": ["Material Design Bootstrap", "Paypal React"],
+        "repo": "https://github.com/vinzhaherman/pootis-store",
+        "link": "https://pootis-in-store.netlify.com",
+        "img":{
+            "img1": "./src/img/poot1.png",
+            "img2": "./src/img/poot2.png",
+            "img3": "./src/img/poot3.png",
+            "img4": "./src/img/poot4.png",
+            "img5": "./src/img/poot5.png"
+        },
+        "status": "online",
         "projectType": "Personal"
     }
 ];
@@ -137,7 +160,7 @@ var res = data.map(el => {
                 <div class="gallery-content"><img src="${el.thumb}" alt="" class="photo"></div>
                 <div class="gal-opt">
                     <button class="modaltrigger btn-reset opt-detail" data-modal="${el.id}"><i class="material-icons"> info </i></button>
-                    <a href="${el.repo}" class="opt-git"><i class="material-icons"> folder </i></a>
+                    <a href="${el.repo}" target="_blank" class="opt-git"><i class="material-icons"> folder </i></a>
                 </div>
             </div>`;
 });
