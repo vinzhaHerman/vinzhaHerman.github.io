@@ -13,8 +13,8 @@ var data = [
             "Reservation cancelation [customer]",
             "Forgot Password [customer]"
         ],
-        "tools": ["HTML", "CSS", "Javascript", "Bootstrap", "PHP", "Codeigniter", "MySQL"],
-        "helper": ["Animate.css", "Slick.js", "creative tim", "Bootstrap datepicker"],
+        "tools": [" HTML", " CSS", " Javascript", " Bootstrap", " PHP", " Codeigniter", " MySQL"],
+        "helper": [" Animate.css", " Slick.js", " Creative Tim", " Bootstrap datepicker"],
         "repo": "https://github.com/vinzhaherman/bumimandiri",
         "link": "https://bumimandiri.000webhostapp.com",
         "img":{
@@ -37,7 +37,7 @@ var data = [
             "profile [admin]", 
             "dashboard [admin]", 
         ],
-        "tools": ["HTML", "CSS", "Javascript", "PHP", "Codeigniter", "MySQL"],
+        "tools": [" HTML", "CSS", "Javascript", "PHP", "Codeigniter", "MySQL"],
         "helper": ["none"],
         "repo": "https://github.com/vinzhaherman/sing-apik-highschool",
         "link": "javascript:void(0)",
@@ -157,7 +157,7 @@ var data = [
 
 var res = data.map(el => {
     return `<div class="gallery-item">
-                <div class="gallery-content"><img src="${el.thumb}" alt="" class="photo"></div>
+                <div class="gallery-content"><span class="modaltrigger" data-modal="${el.id}"><img src="${el.thumb}" alt="" class="photo"></span></div>
                 <div class="gal-opt">
                     <button class="modaltrigger btn-reset opt-detail" data-modal="${el.id}"><i class="material-icons"> info </i></button>
                     <a href="${el.repo}" target="_blank" class="opt-git"><i class="material-icons"> folder </i></a>
@@ -201,6 +201,7 @@ for (let i = 0; i < mt.length; i++) {
 
         document.getElementById('pvTools').innerHTML = modalData[0].tools;
         document.getElementById('pvHelper').innerHTML = modalData[0].helper;
+        document.getElementById('repo').setAttribute("href", modalData[0].repo)
         document.getElementById('linkToWeb').setAttribute("href", modalData[0].link);
     });
     

@@ -37,7 +37,9 @@ body{
 
 
 
-
+.links{
+    color: rgb(255, 151, 39);
+}
 
 .logo{
     color: rgb(255, 151, 39);
@@ -299,7 +301,18 @@ body{
 
 /* width */
 .para-scroll::-webkit-scrollbar {
-  display: none;
+  width: 5px;
+}
+
+.para-scroll::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(255, 151, 39);
+}
+.para-scroll::-webkit-scrollbar-track{
+    background-color: rgba(255, 151, 39, 0.2);
+}
+.para-scroll::-webkit-scrollbar:hover{
+    width: 8px;
 }
 
 .m-d-title{
@@ -312,6 +325,12 @@ body{
     font-size: 12pt;
     color: rgb(77, 73, 73);
     margin: 32px 0;
+}
+.sub-title{
+    color: rgb(255, 151, 39);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 12px 0 6px 0;
 }
 .tools-list{
     margin-bottom: 36px;
@@ -382,6 +401,9 @@ footer{
     }
     .para-scroll{
         text-align: center;
+    }
+    .gal-opt{
+        display: none;
     }
 }
 
