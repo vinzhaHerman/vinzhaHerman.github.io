@@ -63,7 +63,7 @@ var data = [
             "Shopping cart"
         ],
         "tools": ["Wordpress", "HTML", "CSS", "Javascript", "PHP", "MySQL"],
-        "helper": ["Wordpress", "woocomerce"],
+        "helper": ["Wordpress", "woo-comerce"],
         "repo": "javascript:void(0)",
         "link": "javascript:void(0)",
         "img":{
